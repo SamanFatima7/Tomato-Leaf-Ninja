@@ -21,7 +21,7 @@ def load_model():
             with open(model_path, "wb") as f:
                 f.write(r.content)
     
-    return tf.keras.models.load_model(model_path, , compile=False)
+    return tf.keras.models.load_model(model_path, compile=False)
 
 model = load_model()
 
